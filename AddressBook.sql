@@ -52,3 +52,10 @@ UPDATE AddressBook SET name='nihal',contact_type='friend' where Id=4;
 UPDATE AddressBook SET name='rajan',contact_type='brother' where Id=5;
 
 SELECT contact_type, COUNT(*) AS count FROM AddressBook GROUP BY contact_type;
+
+INSERT INTO AddressBook (first_name, last_name, address, city, state, zip, phone, email, name, contact_type)
+VALUES ('Manoj', 'Giri', 'Gayghat', 'Motihari', 'Bihar', '845437', '99999999999', 'girimanoj@example.com', 'kundan', 'Friends'),
+       ('Manoj', 'Giri', 'Gayghat', 'Motihari', 'Bihar', '845437', '99999999999', 'girimanoj@example.com', 'kundan', 'Family');
+
+SELECT * FROM AddressBook;
+
