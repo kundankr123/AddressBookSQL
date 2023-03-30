@@ -46,3 +46,9 @@ ALTER TABLE AddressBook
 ADD name VARCHAR(100), 
     contact_type VARCHAR(50);
 
+UPDATE AddressBook SET name='dinesh',contact_type='friend' where Id=2;
+UPDATE AddressBook SET name='vinay',contact_type='friend' where Id=3;
+UPDATE AddressBook SET name='nihal',contact_type='friend' where Id=4;
+UPDATE AddressBook SET name='rajan',contact_type='brother' where Id=5;
+
+SELECT contact_type, COUNT(*) AS count FROM AddressBook GROUP BY contact_type;
