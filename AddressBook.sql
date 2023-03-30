@@ -17,6 +17,10 @@ VALUES ('kundan', 'kumar', 'Motihari', 'Motihari', 'Bihar', '845401', '797546136
 
 select * from AddressBook;
 
-UPDATE AddressBook SET email = 'newemail@email.com' WHERE first_name = 'kundan'
+UPDATE AddressBook SET email = 'newemail@email.com' WHERE first_name = 'kundan';
 
-select * from AddressBook
+select * from AddressBook;
+
+DELETE FROM AddressBook WHERE first_name = 'kundan';
+
+select * from AddressBook;
