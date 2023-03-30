@@ -11,3 +11,8 @@ CREATE TABLE AddressBook (
   phone VARCHAR(20) NOT NULL,
   email VARCHAR(100) NOT NULL
 );
+
+INSERT INTO AddressBook (first_name, last_name, address, city, state, zip, phone, email) 
+VALUES ('kundan', 'kumar', 'Motihari', 'Motihari', 'Bihar', '845401', '7975461361', 'kundankr123@gmail.com');
+
+select * from AddressBook;
