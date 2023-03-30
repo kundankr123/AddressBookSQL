@@ -16,3 +16,7 @@ INSERT INTO AddressBook (first_name, last_name, address, city, state, zip, phone
 VALUES ('kundan', 'kumar', 'Motihari', 'Motihari', 'Bihar', '845401', '7975461361', 'kundankr123@gmail.com');
 
 select * from AddressBook;
+
+UPDATE AddressBook SET email = 'newemail@email.com' WHERE first_name = 'kundan'
+
+select * from AddressBook
