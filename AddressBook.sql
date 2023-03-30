@@ -39,3 +39,5 @@ select * from AddressBook;
 SELECT first_name,last_name FROM AddressBook WHERE city = 'Motihari';
 
 SELECT city, COUNT(*) AS count FROM AddressBook GROUP BY city;
+
+SELECT * FROM AddressBook WHERE city = 'Patna' ORDER BY last_name, first_name;
