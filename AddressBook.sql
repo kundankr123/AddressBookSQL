@@ -24,3 +24,12 @@ select * from AddressBook;
 DELETE FROM AddressBook WHERE first_name = 'kundan';
 
 select * from AddressBook;
+
+INSERT INTO AddressBook (first_name, last_name, address, city, state, zip, phone, email) 
+VALUES ('kundan', 'kumar', 'Motihari', 'Motihari', 'Bihar', '845401', '7975461361', 'kundankr123@gmail.com');
+INSERT INTO AddressBook (first_name, last_name, address, city, state, zip, phone, email) 
+VALUES ('Rajan', 'kumar', 'Motihari', 'Motihari', 'Bihar', '845401', '7975461361', 'rajankr123@gmail.com');
+
+select * from AddressBook;
+
+SELECT first_name,last_name FROM AddressBook WHERE city = 'Motihari';
